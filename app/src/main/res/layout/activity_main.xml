@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <!-- Box only left/right: a scrolling column should use the full height of the round screen. -->
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_boxedEdges="left|right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/round_scroll_pad"
+            android:paddingBottom="@dimen/round_scroll_pad">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/accent"
+                android:textSize="@dimen/text_title"
+                android:textStyle="bold" />
+
+            <com.padbridge.wear.ui.PadView
+                android:id="@+id/padView"
+                android:layout_width="@dimen/pad_view"
+                android:layout_height="96dp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvPad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/tvServer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_small" />
+
+            <Button
+                android:id="@+id/btnBridge"
+                style="@style/PadBridge.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/btn_start" />
+
+            <Button
+                android:id="@+id/btnPair"
+                style="@style/PadBridge.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_pair" />
+
+            <Button
+                android:id="@+id/btnSettings"
+                style="@style/PadBridge.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_settings" />
+
+            <Button
+                android:id="@+id/btnInputTest"
+                style="@style/PadBridge.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_input_test" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/hint_foreground"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_mono" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.wear.widget.BoxInsetLayout>

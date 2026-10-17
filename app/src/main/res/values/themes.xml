@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DeviceDefault on Wear OS 2 = the platform watch theme (dark, swipe-to-dismiss). -->
+    <style name="Theme.PadBridge" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <style name="PadBridge.Button" parent="@android:style/Widget.DeviceDefault.Button">
+        <item name="android:background">@drawable/btn_pill</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <style name="PadBridge.Button.Primary">
+        <item name="android:background">@drawable/btn_pill_primary</item>
+        <item name="android:textColor">@color/bg</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PadBridge.Label" parent="@android:style/Widget.DeviceDefault.TextView">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="PadBridge.Field" parent="@android:style/Widget.DeviceDefault.EditText">
+        <item name="android:background">@drawable/field</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+</resources>

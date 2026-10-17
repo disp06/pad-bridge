@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Extra vertical padding so the first/last rows of a scrolling column clear the round bezel. -->
+    <dimen name="round_scroll_pad">34dp</dimen>
+    <dimen name="side_pad">14dp</dimen>
+    <dimen name="text_title">18sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_mono">10sp</dimen>
+    <dimen name="pad_view">128dp</dimen>
+</resources>

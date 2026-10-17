@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- pad body -->
+    <path
+        android:fillColor="#FF7DB6FF"
+        android:pathData="M38,48h32a12,12 0,0 1,12 12v2a10,10 0,0 1,-17.5 6.6l-2.2,-2.6h-16.6l-2.2,2.6A10,10 0,0 1,26 62v-2a12,12 0,0 1,12 -12z" />
+    <!-- d-pad -->
+    <path
+        android:fillColor="#FF101624"
+        android:pathData="M36,54h3v4h4v3h-4v4h-3v-4h-4v-3h4z" />
+    <!-- face buttons -->
+    <path
+        android:fillColor="#FF101624"
+        android:pathData="M70,56m-2.2,0a2.2,2.2 0,1 1,4.4 0a2.2,2.2 0,1 1,-4.4 0M75,61m-2.2,0a2.2,2.2 0,1 1,4.4 0a2.2,2.2 0,1 1,-4.4 0" />
+    <!-- signal arcs -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M46,38a11,11 0,0 1,16 0M41,32a18,18 0,0 1,26 0" />
+</vector>

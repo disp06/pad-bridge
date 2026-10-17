@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <!-- Header, status and the scan button are list items too, so everything scrolls on the round screen. -->
+    <androidx.wear.widget.WearableRecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/round_scroll_pad"
+        android:paddingBottom="@dimen/round_scroll_pad"
+        android:scrollbars="vertical" />
+</androidx.wear.widget.BoxInsetLayout>
